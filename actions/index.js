@@ -3,7 +3,7 @@ const jwt = require("jsonwebtoken");
 const endpoint = "https://online-food-recipe-app.herokuapp.com/v1/graphql";
 const header = {
   "content-type": "application/json",
-  "x-hasura-admin-secret": "melakut",
+  "x-hasura-admin-secret": process.env.ADMIN_SECRET,
 };
 
 const CREATE_USER_OPERATION = `
