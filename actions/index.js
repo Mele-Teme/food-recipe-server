@@ -1,6 +1,6 @@
 const axios = require("axios").default;
 const jwt = require("jsonwebtoken");
-const endpoint = "https://online-food-recipe-app.herokuapp.com/v1/graphql";
+const endpoint = "https://food-recipe-app-mele.hasura.app/v1/graphql";
 const header = {
   "content-type": "application/json",
   "x-hasura-admin-secret": process.env.ADMIN_SECRET,
